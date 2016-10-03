@@ -371,3 +371,17 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
+.imgcontainer {
+	width: 100%;
+	text-align: center;
+}
+.imgcontainer img {
+	height: 200px;
+	max-height: 50%;
+}
+/*.name-prompts a {
+	margin: 1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}*/

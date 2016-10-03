@@ -14,7 +14,7 @@
 	<!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
     </head>
     <body>
-	<div data-role="tabs" id="tabs">
+<div data-role="tabs" id="tabs">
 	<div data-role="header">
 		<div data-role="navbar">
 			<ul>
@@ -24,11 +24,49 @@
 		</div>
 	</div>
 	<div id="memorize" class="ui-body-d ui-content">
-			ho
+		<div class="imgcontainer">
+			<img class="face" />
+		</div>
+		<div class="name-prompts ui-grid-a ui-responsive ui-controlgroup-controls">
+			<div class="ui-block-a"><a href="#" class="ui-btn ui-coners-all">xxx</a></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-coners-all">xxx</a></div>
+			<div class="ui-block-a"><a href="#" class="ui-btn ui-coners-all">xxx</a></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-coners-all">xxx</a></div>
+			<div class="ui-block-a"><a href="#" class="ui-btn ui-coners-all">xxx</a></div>
+		</div>
 	</div>
 	<div id="quiz" class="ui-content">
-			ha
+		<div class="imgcontainer">
+			<img class="face" />
+		</div>
+		<div data-role="controlgroup" class="name-prompt">
+			<h3 class="ui-btn">NAME</h3>
+		</div>
 	</div>
+
+	
+</div>
+	<div data-role="footer" style="overflow:hidden;" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#select-course" data-rel="popup" id="select-course-button">Select Course</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+	    
+	<div data-role="popup" id="select-course" data-overlay-theme="b" data-theme="b" data-dismissible="false">
+		<div data-role="header" data-theme="a"><h1>Enter a Course Name</h1></div>
+		<div role="main" class="ui-content">
+			<p>Enter the name of the course whose roster you'd like to memorize.</p>
+			<label for="search-control-group">Course Name: </label>
+			<div data-role="controlgroup" data-type="horizontal">
+				<input id="select-course-text" data-wrapper-class="controlgroup-textinput ui-btn" type="text" autofocus>
+				<button id="select-course-clear">Clear</button>
+			</div>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        	<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow"
+			   id="loadCourse">Load Course</a>
+		</div>
 	</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
