@@ -58,10 +58,14 @@
 		<div data-role="header" data-theme="a"><h1>Enter a Course Name</h1></div>
 		<div role="main" class="ui-content">
 			<p>Enter the name of the course whose roster you'd like to memorize.</p>
-			<label for="search-control-group">Course Name: </label>
+			<label for="select-course-text">Course Name: </label>
 			<div data-role="controlgroup" data-type="horizontal">
 				<input id="select-course-text" data-wrapper-class="controlgroup-textinput ui-btn" type="text" autofocus>
 				<button id="select-course-clear">Clear</button>
+			</div>
+			<label for="select-course-pdf">Load PDF: </label>
+			<div data-role="controlgroup" data-type="horizontal">
+				<input id="select-course-pdf" data-wrapper-class="controlgroup-textinput ui-btn" type="file">
 			</div>
 			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
         	<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow"
@@ -73,6 +77,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.mobile-1.4.5.min.js"></script>
 
+        <script src="js/pdf.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
