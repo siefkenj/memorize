@@ -133,11 +133,12 @@ $(document).ready(function () {
 				} catch (e) {
 					// local storage failed
 					alert("Cannot save PDF to localstore.  It might be too big, or you might need to clear your local store cache.");
+					// process the PDF
+					pdfProcessor.url = reader.result;
+					pdfProcessor.onCompletion = setNamesFromProcessedPDF;
+					processPDF(pdfProcessor.url);
 				}
-				// process the PDF
-				pdfProcessor.url = reader.result;
-				pdfProcessor.onCompletion = setNamesFromProcessedPDF;
-				processPDF(pdfProcessor.url);
+				window.setTimeout(setSearchString, 100);
 			}, false);
 			reader.readAsDataURL(file);
 		} else {
